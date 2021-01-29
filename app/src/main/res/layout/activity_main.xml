@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextNumberDecimal2"
+        android:id="@+id/edit_preco_gasolina"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
@@ -53,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/edit_preco_alcool"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
@@ -69,7 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bt_calcular"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
@@ -77,8 +77,21 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="45dp"
         android:layout_marginRight="45dp"
+        android:onClick="btCalcular"
         android:text="Calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal2" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_preco_gasolina" />
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="17dp"
+        android:text="Nenhuma opção escolhida"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/bt_calcular"
+        app:layout_constraintTop_toBottomOf="@+id/bt_calcular" />
 </androidx.constraintlayout.widget.ConstraintLayout>
